@@ -1,0 +1,326 @@
+
+@font-face { font-family: OldLondon; src: url('OldLondon.ttf'); } 
+
+html {
+   background-image: url('banner.jpg');
+   font-family: Verdana, Geneva, sans-serif;
+   height: 100%;
+}
+
+body{
+   
+   min-height: 100%;   
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1024px;   
+   width: 100%;
+}
+
+article p {
+   line-height: 1.5;
+   margin-bottom: 30px;
+}
+
+
+.container{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+    min-height: 100%
+    
+}
+
+h2
+{
+    color: rgb(33, 88, 132);
+   text-shadow: white -2px 0px 0px, rgb(151, 151, 151) -14px 0px 8px;
+   font-family: Speeder;
+   font-weight: normal;
+   font-size: 1.5em;
+   font-style: oblique;
+   letter-spacing: 0.03em;
+   line-height: 1.2em;
+   margin-bottom: 20px;
+}
+
+/*Title Style */
+
+#main-header{
+    background: linear-gradient(to bottom, rgb(3, 51, 86), black);
+    text-align: center;
+    color:#fff;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(3, 51, 86);
+}
+
+#webname
+{
+    font-family: OldLondon;
+    font-size: 5vw;
+}
+
+
+/*Navigation Style*/
+#navbar {
+    background: rgba(255,255,255,0.5);
+    width: 100%;
+    text-align: center;
+    
+}
+
+.active
+{
+   color: #333;
+   background-color: #ffffff;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display:inline;
+}
+
+#navbar a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+#navbar a:hover {
+   color: white;
+   background-color: black;
+}
+
+#topnav .icon
+{
+    display: none;
+}
+
+
+
+/* Footer */
+footer {
+   color: white;    
+   background: linear-gradient(to bottom, rgb(3, 51, 86), black);
+   font-size: 0.9em;  
+   font-style: normal;
+   
+}
+
+footer::after {
+   display: table;
+   content: "";
+   clear: both;
+}
+
+/*Login */
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.addcolors
+{
+    background-color: rgb(213, 241, 255);
+    box-shadow: rgb(51, 51, 51) 10px 0px 40px, rgb(51, 51, 51) -10px 0px 40px;
+    border-left: 1px solid rgb(3, 51, 86);
+    border-right: 1px solid rgb(3, 51, 86);
+}
+
+/*Main*/
+
+figure img
+{
+    
+    width:100%;
+    height: auto;
+}
+
+
+
+
+
+/*Responsive */
+@media screen and (max-width: 600px)
+{
+    #navbar.responsive {position:relative;}
+    #navbar.responsive a.icon
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #navbar li
+    {
+        display: block;
+    }
+    
+    #navbar.responsive a
+    {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+}
+
+.flexcontain div
+{
+    border:1px #ccc solid;
+    padding:10px;
+}
+
+
+
+@media screen and (min-width: 600px)
+{
+.flexcontain
+{
+    display: flex; 
+}
+
+.art1
+{
+    flex: 2;
+    order:2;
+}
+
+.art2
+{
+    flex: 1;
+    order:1;
+}
+
+.art3
+{
+    flex: 1;
+    order:3;
+}
+.img1
+{
+    flex: 1;
+    order:1;
+}
+.img2
+{
+    flex: 1;
+    order:2;
+}
+
+.montyimg figure img
+    {
+        float:right;
+        width: 50%;
+    }
+}
+
+
+#supportp
+    {
+        flex:1;
+        
+    }
+    
+  #contactp
+  {
+      flex:2;
+  }
+  
+  
+  
+  
+/* Table Styles */
+table
+{
+ background-color: black; 
+ border: 5px solid gray; 
+ column-count: 2; 
+}
+
+.responsetable
+{
+    overflow-x: auto;
+}
+
+th{
+    border: 3px solid grey;
+    line-height: 1.4em;
+    padding: 8px;
+    background-color: black;
+    color: rgb(130,210,255);
+    font-weight: normal;
+}
+
+td{
+    border: 3px solid grey;
+    line-height: 1.4em;
+    padding: 8px; 
+    color: white;
+    font-size: 0.9em;
+    vertical-align: top;
+}
+
+/* Column Styles */
+
+#firstCol
+{
+    width: 24%;
+}
+
+.dataCols
+{
+    width: 19%;
+}
+
+/* Table Header Styles */
+thead
+{
+   height: 80px;
+   
+}
+
+thead > tr:first-child > th:first-of-type
+{
+    font-size: 2em;
+    
+}
+
+thead > tr:first-child > th:not([rowspan="2"])
+{
+    background-color: transparent;
+    font-weight:bold;
+    color: #00cccc;
+}
